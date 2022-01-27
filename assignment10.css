@@ -1,0 +1,204 @@
+@import "reset.css";
+
+body {
+  height: 200vh;
+}
+.top-bar {
+  width: 100vw;
+  height: 170px;
+  background-color: #ffce33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 0px 25px;
+  box-sizing: border-box;
+  position: relative;
+  top: -30px;
+}
+.top-bar div {
+  width: 33%;
+}
+.top-bar div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-bar div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-box-center {
+  display: flex;
+  justify-content: center;
+  height: 0px;
+  margin-bottom: 80px;
+}
+.search-box {
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  top: -70px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  font-size: 25px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+.search-box span {
+  opacity: 0.5;
+}
+.search-box input {
+  width: 80%;
+  height: 80px;
+  border: none;
+  font-size: 25px;
+}
+.search-box input:focus {
+  outline: none;
+}
+.search-box input::placeholder {
+  opacity: 0.5;
+  font-size: 25px;
+}
+.contents {
+  width: 100%;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contents__main-title span {
+  font-size: 35px;
+  font-weight: 600;
+}
+.contents__main-content {
+  margin-top: 40px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.contents__main-content img {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  margin-right: 35px;
+}
+.contents__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contents__main-text .book-title {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+}
+.contents__main-text .book-type {
+  display: block;
+  font-size: 22px;
+  opacity: 0.6;
+}
+.contents__main-text .content__main-text__star {
+  color: #ffce33;
+}
+.contents__main-text .content__main-text__star i:last-child {
+  color: #f7f7f7;
+}
+.content__main-text__book-type {
+  display: flex;
+  justify-content: space-evenly;
+}
+.content__main-text__book-type div {
+  background-color: #f7f7f7;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content__main-text__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__main-text__btn__bookmark {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ffce33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.content__main-text__btn__booknow {
+  width: 170px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.adventure-booklist__first img {
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+}
+.adventure-booklist__first {
+  margin: 0px 40px;
+}
+.adventure-booklist__star {
+  color: #ffce33;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.adventure-booklist__star i:last-child {
+  color: #f7f7f7;
+}
+.adventure-booklist {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  margin: 30px 0px;
+  display: flex;
+}
+.adventure-booklist::-webkit-scrollbar {
+  display: none;
+}
+.popular-author {
+  margin-top: 40px;
+  display: flex;
+}
+.popular-author img {
+  border-radius: 10px;
+  margin-right: 40px;
+}
+.popular-author__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popular-author__text span:first-child {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  height: 30%;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+.popular-author__text span:last-child {
+  height: 70%;
+  font-size: 25px;
+  opacity: 0.5;
+  line-height: 1.4;
+}
